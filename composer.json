@@ -1,0 +1,19 @@
+{
+    "name": "johncode/mvc_design",
+    "description": "a simple MVC framework with PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ifeanyichukwu John",
+            "email": "ifeanyichukwujohn70@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
