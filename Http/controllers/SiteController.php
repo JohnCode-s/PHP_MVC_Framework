@@ -24,8 +24,9 @@ class SiteController extends Controller
 
     public function home()
     {
+        $name = Application::isGuest() ? "Dear" : Application::$app->user->getDisplayName();
         return $this->render('home', [
-            'name' => 'John Code'
+            'name' => $name
         ]);
     }
 

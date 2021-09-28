@@ -2,7 +2,7 @@
 
 namespace App\form;
 
-use App\Model;
+use App\Http\Model;
 
 /**
  * Class Form

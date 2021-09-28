@@ -8,16 +8,19 @@ $form = new Form();
 <h1>Register</h1>
 
 <?php $form = Form::begin('', 'post') ?>
-    <div class="row">
-        <div class="col">
-            <?php echo $form->field($model, 'firstname') ?>
-        </div>
-        <div class="col">
-            <?php echo $form->field($model, 'lastname') ?>
-        </div>
+<div class="row">
+    <div class="col">
+        <?php echo $form->field($model, 'firstname') ?>
     </div>
-    <?php echo $form->field($model, 'email') ?>
-    <?php echo $form->field($model, 'password')->passwordField() ?>
-    <?php echo $form->field($model, 'passwordConfirm')->passwordField() ?>
+    <div class="col">
+        <?php echo $form->field($model, 'lastname') ?>
+    </div>
+</div>
+<?php echo $form->field($model, 'email') ?>
+<?php echo $form->field($model, 'password')->passwordField() ?>
+<?php echo $form->field($model, 'passwordConfirm')->passwordField() ?>
+<div style="display: flex;justify-content:space-between">
     <button class="btn btn-success">Submit</button>
+    <p>Have an account already? <a href="/login">Login</a></p>
+</div>
 <?php Form::end() ?>

@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <title>Hello, world!</title>
+    <title><?php $this->title = "Welcome to my MVC framework";?></title>
 </head>
 <body>
 
